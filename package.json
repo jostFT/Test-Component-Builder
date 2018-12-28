@@ -1,0 +1,36 @@
+{
+  "name": "test-component-builder",
+  "version": "0.1.0",
+  "description": "A component builder used for testing. Mainly built for testing react components but is not limited to react.",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && node node_modules/@babel/cli/bin/babel.js src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faroese-Telecom/Test-Component-Builder.git"
+  },
+  "keywords": [
+    "react",
+    "jest",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faroese-Telecom/Test-Component-Builder/issues"
+  },
+  "homepage": "https://github.com/Faroese-Telecom/Test-Component-Builder#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "rimraf": "^2.6.2",
+    "eslint": "^5.9.0"
+  }
+}
