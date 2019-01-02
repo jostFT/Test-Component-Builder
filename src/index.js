@@ -22,8 +22,16 @@ export class Builder {
     return this;
   }
 
-  inject(method) {
-    this.injectValues.push(method);
+  inject(values) {
+    this.injectValues.push(values);
+    return this;
+  }
+
+  override(key, values) {
+    const index = _.findIndex(this.injectValues, o => o.key == key);
+    if (index === -1) return this;
+
+    this.injectValues[index] = _.assign(this.injectValues[index], values);
     return this;
   }
 
