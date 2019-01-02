@@ -1,6 +1,6 @@
 {
   "name": "test-component-builder",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A component builder used for testing. Mainly built for testing react components but is not limited to react.",
   "main": "lib/index.js",
   "scripts": {

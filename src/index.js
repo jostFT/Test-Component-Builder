@@ -22,8 +22,8 @@ export class Builder {
     return this;
   }
 
-  inject(values) {
-    this.injectValues.push(values);
+  inject(values, clone = true) {
+    this.injectValues.push(clone ? _.cloneDeep(values) : values);
     return this;
   }
 
